@@ -15,6 +15,10 @@ server.use(cors());
 
 configureRoutes(server);
 
+server.get('/', (req, res) =>{
+  res.send('<h1>It works</h1>')
+})
+
 module.exports = {
   server,
 };
